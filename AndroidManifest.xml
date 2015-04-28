@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crossshop"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.crossshop.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.crossshop.Dialog"
+            android:label="@string/title_dialog"
+            android:parentActivityName="com.crossshop.Main"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crossshop.Main" />
+        </activity>
+        <activity
+            android:name="com.crossshop.Category"
+            android:label="@string/title_category"
+            android:parentActivityName="com.crossshop.Main"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crossshop.Main" />
+        </activity>
+        <activity
+            android:name="com.crossshop.LastShop"
+            android:label="@string/title_lastshop"
+            android:parentActivityName="com.crossshop.Main"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crossshop.Main" />
+        </activity>
+        <activity
+            android:name="com.crossshop.UsersShop"
+            android:label="@string/title_usersshop"
+            android:parentActivityName="com.crossshop.Main"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crossshop.Main" />
+        </activity>
+        <activity
+            android:name="com.crossshop.ListViewPrototype"
+            android:label="@string/title_listviewprototype"
+            android:parentActivityName="com.crossshop.Category"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crossshop.Category" />
+        </activity>
+        <activity
+            android:name="com.crossshop.CartView"
+            android:label="@string/title_activity_cart_view" >
+        </activity>
+    </application>
+
+</manifest>

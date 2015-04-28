@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:rowCount="4" >
+
+    <LinearLayout
+        android:id="@+id/ll_category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Bevande"
+            android:src="@drawable/bevande" />
+
+        <TextView
+            android:id="@+id/tv_category1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Colazione"
+            android:src="@drawable/colazione" />
+
+        <TextView
+            android:id="@+id/tv_category2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Igiene"
+            android:src="@drawable/cosmetici" />
+
+        <TextView
+            android:id="@+id/tv_category3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Pasta/pane"
+            android:src="@drawable/pasta" />
+
+        <TextView
+            android:id="@+id/tv_category4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Scatolette"
+            android:src="@drawable/scatolette" />
+
+        <TextView
+            android:id="@+id/tv_category5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Cucina"
+            android:src="@drawable/cucina" />
+
+        <TextView
+            android:id="@+id/tv_category6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/ib_category7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:contentDescription="Snacks"
+            android:src="@drawable/snacks" />
+
+        <TextView
+            android:id="@+id/tv_category7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+</GridLayout>

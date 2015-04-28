@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrossShop</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_dialog">Login</string>
+    <string name="title_category">Categories</string>
+    <string name="title_lastshop">Last Shop</string>
+    <string name="title_usersshop">Users Shop</string>
+    <string name="title_listviewprototype">Items by Category</string>
+    <string name="desc">Image</string>
+    <string name="title_activity_cart_view">CartView</string>
+
+</resources>

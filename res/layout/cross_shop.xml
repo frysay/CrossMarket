@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_crossshop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#d3d3d3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#d3d3d3"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/menu_icon" />
+
+            <ImageView
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/crossshop" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@null"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:contentDescription="Cart"
+                    android:src="@drawable/icon_cart" />
+
+                <TextView
+                    android:id="@+id/txtCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/view3"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/shapecount"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="9dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#d3d3d3"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/shopbydepartment_icon" />
+
+            <EditText
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.6"
+                android:background="@android:color/white"
+                android:hint="Prodotto da cercare..."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/voice_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@android:color/white"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/btn_categories"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Categories" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_lastshop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Last shop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/listview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_advertise"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:text="Advertise" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/listview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#d3d3d3"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:text="Login" />
+    </LinearLayout>
+
+</LinearLayout>
